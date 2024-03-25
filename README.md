@@ -1,2 +1,1 @@
-# traffic-light-app
-Traffic Light App
+# Traffic Light App
