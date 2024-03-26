@@ -39,7 +39,6 @@
     background-color: #111;
     border-radius: 50%;
     filter: blur(10px);
-    z-index: 1;
 }
 
 .container .light {

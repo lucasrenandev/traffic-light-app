@@ -5,7 +5,7 @@ const yellowColor = document.querySelector(".container .yellow-color");
 const greenColor = document.querySelector(".container .green-color");
 const buttons = document.querySelector(".buttons");
 
-let interval = null;
+let colorInterval = null;
 let colorIndex = 0;
 
 const turnOnTrafficLight = (event) => {
@@ -30,7 +30,7 @@ const turnOnTrafficLight = (event) => {
 }
 
 const stopAutomaticColor = () => {
-    clearInterval(interval);
+    clearInterval(colorInterval);
 }
 
 const controlAutomaticColor = () => {
@@ -68,7 +68,7 @@ const lightUpGreenColor = () => {
 }
 
 const lightUpAutomaticColor = () => {
-    interval = setInterval(automaticColor, 800);
+    colorInterval = setInterval(automaticColor, 800);
 }
 
 buttons.addEventListener("click", turnOnTrafficLight);
